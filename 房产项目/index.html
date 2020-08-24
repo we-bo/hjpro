@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/index.css" />
+		<!-- <style>
+			*{
+				margin: 0px;
+				height: 0px;
+			}
+			#nav{
+			
+				width: 100%;
+				height: 145px;
+				background: url(images/topbg.jpg)  no-repeat;
+			    background-size: 100% 33%;
+			    position: relative;
+			    text-align: right;
+			}
+			#nav a{
+				width: 200px;
+				position: relative;
+				left: -250px;
+				top: 13px;
+				text-decoration: none;
+				color: #616161;
+				padding: 12px;
+				font-size: 16px;
+			}
+			#d1,#d2,#d3,#d4{
+				position: absolute;
+				top: 8px;
+				left: 2px;
+			}
+			#nav a:hover{
+				color: #e60114;
+			}
+			#t1>img{
+				float: left;
+				width: 120px;
+				height: 120px;
+				position: absolute;
+				top: 35px;
+				left: -1px;
+				z-index: 2;
+				display: none;
+			}
+			#nav>a:nth-child(2):hover>img{
+				display: inline;
+			}
+			#header{
+				width: 100%;
+				height: 50px;
+				background: url(images/logo.gif) no-repeat;
+				position: relative;
+				top: -67px;
+				left: 200px;
+			
+			}
+			#header>ul li{
+				width: 100%;
+				height: 50px;
+				list-style: none;
+				display: inline;
+			}
+			#header>ul>li>a{
+				text-decoration: none;
+				color: #8a8a8a;
+				font-size: 18px;
+				position: relative;
+				top: 7px;
+				left: 221px;
+				margin-right: 45px;
+				
+			}
+			#header>ul>li>a:hover{
+				color: #e60114;
+				display:inline-block;
+				height: 40px;
+				border-bottom: 3px #e60114 solid;
+			}
+			 #header>ul>li a ul{
+				width: 1920px;
+				height: 49px;
+				background: rgba(0, 0,0,0.2);
+				position: absolute;
+				top: 40px;
+				left: -460px;
+				display: inline;
+				line-height: 49px;
+			} 
+			.z1{
+				width: 100%;
+				height: 50px;
+				background: rgba(0,0,0,0.5);
+				position: absolute;
+				top:50px;
+				left: -200px;
+			    display: none;
+				text-align: center;
+				line-height: 50px;
+			}
+			.z1>a{
+				text-decoration: none;
+				color: #fff;
+				padding-left: 70px;
+			}
+			.z1>a:hover{
+				color: darksalmon;
+			}
+			#z2:hover .z1{
+				 display: block;
+			} 
+			.c1>img{
+				width: 20px;
+				height: 20px;
+				margin-top: 20px;
+				margin: 10px;
+				position: relative;
+			}
+			#header>a{
+				width: 20px;
+				height: 40px;
+				background: url(images/ser.gif) no-repeat;
+				position: relative;
+				top: 8px;
+				left: 1190px;
+				padding-left: 25px;
+				display: block;
+			}
+			.b2{
+				width: 150px;
+				height: 20px;
+				outline: #616161;
+				border: #616161 5px solid;
+				border-radius: 5px;
+				position: absolute;
+				top: 40px;
+				left: -115px;
+				display: none;
+			}
+			#header>a:hover .b2{
+				display: inline-block; 
+			}
+			#header span img{
+				width: 50px;
+				height: 50px;
+				position: relative;
+				top: -47px;
+				left: 1240px;
+			}
+			.z4{
+				width: 100%;
+				height: 50px;
+				background: rgba(0,0,0,0.5);
+				position: absolute;
+				top:50px;
+				left: -200px;
+				text-align: center;
+				line-height: 50px;
+				display: none;
+			}
+			.z4>a{
+				text-decoration: none;
+				color: #fff;
+				padding-left: 50px;
+			}
+			.z4>a:hover{
+				color: darksalmon;
+			}
+			#z3:hover .z4{
+				 display: block;
+			} 
+			.z5{
+				width: 100%;
+				height: 50px;
+				background: rgba(0,0,0,0.5);
+				position: absolute;
+				top:50px;
+				left: -200px;
+				text-align: center;
+				line-height: 50px;
+				display: none;
+			}
+			.z5>a{
+				text-decoration: none;
+				color: #fff;
+				padding-left: 50px;
+			}
+			.z5>a:hover{
+				color: darksalmon;
+			}
+			#z6:hover .z5{
+				 display: block;
+			} 
+			.v1{
+				width: 100%;
+				height: 50px;
+				background: rgba(0,0,0,0.5);
+				position: absolute;
+				top:50px;
+				left: -200px;
+				text-align: center;
+				line-height: 50px;
+				display: none;
+			}
+			.v1>a{
+				text-decoration: none;
+				color: #fff;
+				padding-left: 50px;
+			}
+			.v1>a:hover{
+				color: darksalmon;
+			}
+			#v2:hover .v1{
+				 display: block;
+			} 
+			.v3{
+				width: 100%;
+				height: 50px;
+				background: rgba(0,0,0,0.5);
+				position: absolute;
+				top:50px;
+				left: -200px;
+				text-align: center;
+				line-height: 50px;
+				display: none;
+			}
+			.v3>a{
+				text-decoration: none;
+				color: #fff;
+				padding-left: 50px;
+			}
+			.v3>a:hover{
+				color: darksalmon;
+			}
+			#v4:hover .v3{
+				 display: block;
+			} 
+			.v5{
+				width: 100%;
+				height: 50px;
+				background: rgba(0,0,0,0.5);
+				position: absolute;
+				top:50px;
+				left: -200px;
+				text-align: center;
+				line-height: 50px;
+				display: none;
+			}
+			.v5>a{	
+				text-decoration: none;
+				color: #fff;
+				padding-left: 70px;
+				position: relative;
+				left: 150px;
+			}
+			.v5>a:hover{
+				color: darksalmon;
+			}
+			#v6:hover .v5{
+				 display: block;
+			} 
+			#content>img{
+				width: 100%;
+				height: 400px;
+				margin-top: -67px;
+			}
+			#content ul{
+				width: 80px;
+				height: 20px;
+				list-style: none;
+				position: absolute;
+				top: 500px;
+				left: 850px;
+			}
+			#content ul>li{
+				width: 12px;
+				height: 12px;
+				float: left;
+				background-color: #fff;
+				border-radius: 50%;
+				margin: 6px 5px;
+			}
+			#content ul>li:active{
+				background-color: chocolate;
+			}
+			#b1{
+				background-color:chocolate ;
+			}
+			#footer img{
+				width: 1200px;
+				height: 5px;
+				margin: 333px 0px;
+			}
+			#n1{
+				width: 720px;
+				height: 5px;
+				background-color: #8A8A8A;
+				float: right;
+				margin: 333px 0px;
+			}
+			#n2{
+				width: 1435px;
+				height: 215px;
+				/* border: #D2691E 2px solid; */
+				position: relative;
+				top: -305px;
+				margin: 0px auto;
+				display: flex;
+				flex-wrap: nowrap;
+				flex-direction: row;
+			}
+			.title{
+				width: 33.33%;
+				height: 215px;
+			}
+			.title>div>img{
+				width: 40px;
+				height: 40px;
+			}
+			.title>div>span>a{
+				text-decoration: none;
+				font-weight: bold;
+				color: #000;
+				font-size: 24px;
+				position: relative;
+				top: -10px;
+			}
+			.title>p{
+				padding-top: 67px;
+				color: #5c5c5c;
+				font-size: 20px;
+			}
+			.cokes{
+				text-decoration: none;
+				font-size: 24px;
+				font-weight: bold;
+				color: #5c5c5c;
+				position: relative;
+				top: 50px;
+			}
+			.sel{
+				text-decoration: none;
+				font-size: 18px;
+				color: #5c5c5c;
+				position: relative;
+				top: 40px;
+			}
+			#n2 ul{
+				float: right;
+				width: 50px;
+				height: 200px;
+				margin: -80px -10px;
+			}
+			#n2 ul>li{
+				list-style: none;
+				width: 20px;
+				height: 20px;
+				padding: 3px;
+			}
+			#n2 ul>li>div{
+				width: 8px;
+				height: 8px;
+				border: 2px solid  #9fa6c1;
+				border-radius: 50%;
+			}
+			#n2 ul>li:nth-child(3)>div{
+				background-color: #9fa6c1;
+			}
+			.a1{
+				width: 33.33%;
+				height: 100%;
+			}
+			.a1>img{
+				width: 100%;
+				height: 100%;
+			}
+			.a1 ul{
+				width: 100px;
+				height: 50px;
+				position: absolute;
+				left:740px ;
+				top:250px ;
+				display: flex;
+			}
+			.a1 ul li>img{
+				width: 20px;
+			    height: 20px;
+			}
+			.a2{
+				width: 33.33%;
+				height: 100%;
+				overflow: hidden;
+			}
+			.a2>img{
+				width: 100%;
+				height: 100%;
+				transition-duration: 1s;
+			}
+			.a2>img:hover{
+				transform: scale(1.1,1.1);
+			}
+			.a2>div>img{
+				width: 200px;
+				height: 50px;
+				position: absolute;
+				top: 110px;
+				right: 140px;
+			}
+			#rot{
+				width: 1437px;
+				height: 215px;
+				/* border: 1px #616161 solid; */
+				margin: 0 auto;
+				display: flex;
+				position: relative;
+				top: -305px;
+			}
+			.flre{
+				width: 33.3333%;
+				height: 100%;
+				overflow: hidden;
+			}
+			.flre>a>img{
+				width: 100%;
+				height: 100%;
+				transition: all 1s;
+			}
+			.flre>a>img:hover{
+				transform: scale(1.1);
+			}
+			.tots{
+				position: absolute;
+				top: 135px;
+			}
+			.tots>img{
+				width: 300px;
+				height: 60px;
+			}
+			.coke{
+				width:66.6666% ;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around; 
+				align-items: center;
+				text-align: center;
+			}
+			.coke li{
+				width: 100%;
+				height: 100%;
+				line-height: 200px;
+			}
+			.coke li a{
+				text-decoration: none;
+				color: #9FA6C1;
+				position: relative;
+				top: 25px;
+				left: -75px;
+				font-size: 20px;
+			}
+			.coke li>h3{
+				margin-top: -10px;
+				font-size: 25px;
+			}
+			.coke li>p{
+				position: relative;
+				top: 40px;
+				font-size: 18px;
+			}
+			.coke li{
+				transition: all 1s ease 0s; 
+			}
+			.coke li>a{
+				position: relative;
+				left: 0px;
+			}
+			.link1{
+			  background: url(images/tb_03.png) #fff no-repeat 50px 54px;
+			
+			}
+			.link1:hover{
+				background:url(images/tba_05.png) no-repeat 50px 54px;
+				color: #5c5c5c;
+				font-weight: 700;
+				background-color: #F0F0F0;
+			}
+			.link2{
+			  background: url(images/tb_04.png) #fff no-repeat 50px 54px;
+			}
+			.link2:hover{
+				background:url(images/tba_05.png) no-repeat 50px 54px;
+				color: #5c5c5c;
+				font-weight: 700;
+				background-color: #F0F0F0;
+			}
+			.link3{
+			  background: url(images/tb_05.png) #fff no-repeat 50px 54px;
+			}
+			.link3:hover{
+				background:url(images/tba_05.png) no-repeat 50px 54px;
+				color: #5c5c5c;
+				font-weight: 700;
+				background-color: #F0F0F0;
+			}
+			.link4{
+			  background: url(images/tb_06.png) #fff no-repeat 50px 54px;
+			}
+			.link4:hover{
+				background:url(images/tba_05.png) no-repeat 50px 54px;
+				color: #5c5c5c;
+				font-weight: 700;
+				background-color: #F0F0F0;
+			}
+			.link5{
+			  background: url(images/tb_07.png) #fff no-repeat 50px 54px;
+			}
+			.link5:hover{
+				background:url(images/tba_05.png) no-repeat 50px 54px;
+				color: #5c5c5c;
+				font-weight: 700;
+				background-color: #F0F0F0;
+			}
+			#seres{
+				width: 230px;
+				height: 215px;
+				background-color:#F0F0F0;
+				margin-top: -521px;
+			}
+			#router{
+				width: 100%;
+				height: 4px;
+				margin-top: 0px;
+				background-color:#E7E7E7;
+				background: url(images/lineb.jpg) #fff no-repeat 50% 0%;
+				background-size: 1437px;
+			}
+			#router>img{
+				width: 100%;
+				height: 100%;
+			}
+			#rows{
+				width: 780px;
+				height: 90px;
+				margin-top: 30px;
+				margin-left: 60px;
+				font-size: 24px;
+				color: #5C5C5C;
+				/* background-color: #D2691E; */
+				text-align: center;
+				line-height: 90px;
+			}
+			#rows>img{
+				width: 50px;
+				height: 50px;
+				margin-bottom: -7px;
+			}
+			#rows a{
+				text-decoration: none;
+				color: #000;
+				font-weight: bold;
+				padding-bottom: 20px;
+			}
+			#rows a:hover{
+				color: #E60114;
+			}
+			#rows span{
+				padding-bottom: 20px;
+			}
+			#giao{
+				font-size: 20px;
+				color: #6f6f6f;
+				margin-left: 110px;
+				margin-top: -10px;
+			}
+			#xhr{
+				width: 600px;
+				height: 100px;
+				background-color: #f0f0f0;
+				float: right;
+				margin-right: 100px;
+				margin-top: -75px;
+				text-align: center;
+				line-height: 100px;
+			}
+			#xhr a{
+				text-decoration: none;
+				font-size: 24px;
+				font-weight: bold;
+				color: #5C5C5C;
+			}
+			#xhr a:hover{
+				color: #E60114;
+			}
+		</style> -->
+	</head>
+	<body>
+		<div>
+		<div id="nav">
+			<a href="#">
+				<span id="d1">.</span>
+				OA登录
+			</a>
+			<a href="#" id="t1">
+				<span id="d2">.</span>
+				官方微信
+				<img src="images/yytbar.png" alt=""/>
+				<img src="images/weixin.jpg" alt="" />
+			</a>
+			<a href="#">
+				<span id="d3">.</span>
+				企业邮箱
+			</a>
+			<a href="#">
+				<span id="d4">.</span>
+				线上商学院
+			</a>
+		</div>
+		<div id="header">
+			<ul>
+				<li>
+					<a href="#" >
+						<strong>
+					首页
+					    </strong>
+					</a>
+				</li>
+				<li id="z2">
+					<a href="#">
+						<strong>
+							走进宏建
+							<div class="z1">
+								<a href="#">集团概况</a>
+								<a href="#">董事长致辞</a>
+								<a href="#">企业文化</a>
+								<a href="#">组织架构</a>
+								<a href="#">发展历程</a>
+								<a href="#">集团荣誉</a>
+								<a href="#">发展历程</a>
+							</div>
+						</strong>
+					</a>
+				</li>
+				<li id="z3">
+					<a href="#">
+						<strong>
+							新闻中心
+							<div class="z4">
+								<a href="#">集团新闻</a>
+								<a href="#">项目动态</a>
+								<a href="#">媒体关注</a>
+								<a href="#">影像宏建</a>
+							</div>
+						</strong>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<strong>
+							项目展示
+						</strong>
+					</a>
+				</li>
+				<li id="z6">
+					<a href="#">
+						<strong>
+							客户服务
+							<div class="z5">
+								<a href="#">服务热线</a>
+								<a href="#">物业服务</a>
+							</div>
+						</strong>
+					</a>
+				</li>
+				<li id="v2">
+					<a href="#">
+						<strong>
+							宏建商学院
+							<div class="v1">
+								<a href="#">商学院简介</a>
+								<a href="#">院长寄语</a>
+								<a href="#">学院动态</a>
+							</div>
+						</strong>
+					</a>
+				</li>
+				<li id="v4">
+					<a href="#">
+						<strong>
+							加入宏建
+							<div class="v3">
+								<a href="#">员工风采</a>
+								<a href="#">校园招聘</a>
+								<a href="#">社会招聘</a>
+								<a href="#">人才理念</a>
+							</div>
+						</strong>
+					</a>
+				</li>
+				<li id="v6">
+					<a href="#">
+						<strong>
+							联系我们
+							<div class="v5">
+								<a href="#">宏建物业</a>
+								<a href="#">廉政举报</a>
+								<a href="#">集团总部</a>
+							</div>
+						</strong>
+					</a>
+				</li>
+			</ul>
+				<a>
+				    <input class="b2" type="text" placeholder="请输入关键字" />
+				</a>
+			    <span><img src="images/head-more.gif" alt="" /></span>
+		</div>
+		<div id="content">
+			<img src="images/10142547.jpg" alt="" />
+			<ul>
+				<li></li>
+				<li id="b1"></li>
+				<li></li>
+			</ul>
+		</div>
+		<div id="footer">
+			<img src="./images/lineb.jpg" alt="" >
+		</div>
+		<div id="n1"></div>
+		<div id="n2">
+			<div class="title">
+				<div>
+				<img src="images/news.png" alt="" />
+				<span><a href="#">新闻中心</a></span>
+				</div>
+				<a class="cokes" href="#">责任.匠心|宏建荣获河南房地产行业...</a>
+				<p>2020.08.05</p>
+				<a class="sel" href="#">2020年8月5日下午，“同心战役，共克时艰” 河南房地产行业抗击疫情优秀企业和个人公益表彰...</a>
+				<ul>
+					<li>
+						<div></div>
+					</li>
+					<li>
+						<div></div>
+					</li>
+					<li>
+						<div></div>
+					</li>
+					<li>
+						<div></div>
+					</li>
+					<li>
+						<div></div>
+					</li>
+				</ul>
+			</div>
+			<div class="a1">
+				<img src="images/19145420.jpg" alt="" />
+				<ul>
+					<li>
+						<img src="images/yuan_44.png" alt="" />
+					</li>
+					<li>
+						<img src="images/yuan_44.png" alt="" />
+					</li>
+					<li>
+						<img src="images/yuan_47.png" alt="" />
+					</li>
+					<li>
+						<img src="images/yuan_44.png" alt="" />
+					</li>
+					<li>
+						<img src="images/yuan_44.png" alt="" />
+					</li>
+				</ul>
+			</div>
+			<a href="#" class="a2">
+				<img src="images/demonew_09.gif" />
+				<div>
+					<img src="images/cjzg.png" alt="" />
+				</div>
+            </a>			
+		</div>
+		<div id="rot">
+				<div class="flre">
+					<a href="#">
+						<img src="images/cjsxy.jpg" alt="" >
+						<div class="tots">
+							<img src="images/sxy.png" >
+						</div>
+					</a>
+				</div>
+					<ul class="coke">
+						<li>
+							<h3>快速链接</h3>
+							<p>QUICK CONNECT</p>
+							
+						</li>
+						<li class="link1">
+							<a href="#">企业文化</a>
+						</li>
+						<li class="link2">
+							
+							<a href="#">社会公益</a>
+						</li>
+						<li class="link3">
+							
+							<a href="#">产业生态链</a>
+						</li>
+						<li class="link4">
+							
+							<a href="#">招标采购</a>
+						</li>
+						<li class="link5">
+			
+							<a href="#">加入我们</a>
+						</li>
+					</ul>
+			</div>
+		<div id="seres">	
+		</div>
+		<div id="router">
+			
+		</div>
+		<div id="rows">
+			<a href="#">联系我们|</a>
+			<a href="#">关于宏建|</a>
+			<a href="#">免责声明|</a>
+			<a href="#">网站地图</a>
+			<img src="images/tel_32.gif" alt="" />
+			<span>0371-86092666</span>
+		</div>
+		<div id="giao">
+			<span>版权所有： 宏建控股有限公司</span>&nbsp;&nbsp;&nbsp;
+			<span>豫ICP备12003748</span>&nbsp;&nbsp;&nbsp;
+			<span>技术支持：giao水新说唱</span>
+		</div>
+		<div id="xhr">
+			<a href="#">廉政举报/</a>
+			<a href="#">招标信息/</a>
+			<a href="#">投资发展</a>
+		</div>
+		</div>
+	</body>
+</html>
